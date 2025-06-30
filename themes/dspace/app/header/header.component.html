@@ -54,11 +54,12 @@
             <div class="logo-area">
         <a href="/"><img  class="main-logo" [src]="(handleScroll | async) ? 'assets/images/small-logo.svg':'assets/images/logo-imam.png'" alt="">
           <img  class="small-logo" src="/_layouts/15/2016/Portal/img/small-logo.svg" alt=""></a>
-          
+          @if ((isMobile$ | async) !== true) {
           <div *ngIf="!(handleScroll | async)" class="imam-info hidden-xs hidden-sm">
              <a href="/"> <h6> {{'footer.top.content1' | translate}}</h6></a>
             <a href="/"> <h6 [ngStyle]="{'margin-left':lang ? '70px':'0'}"> {{'footer.top.content6' | translate}}</h6></a>
           </div>
+        }
         </div>
       <!-- <nav *ngIf="(isMobile$ | async) !== true" class="navbar navbar-expand p-0 align-items-stretch align-self-stretch" id="desktop-navbar" [attr.aria-label]="'nav.main.description' | translate">
         <ds-navbar></ds-navbar>

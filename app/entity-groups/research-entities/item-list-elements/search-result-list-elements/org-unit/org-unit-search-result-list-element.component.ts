@@ -36,7 +36,8 @@ import { PublictaionCountComponent } from "../../../../../shared/publictaion-cou
     NgIf,
     NgFor,
     DatePipe,
-    PublictaionCountComponent
+    PublictaionCountComponent,
+    ThemedBadgesComponent
 ],
 })
 /**

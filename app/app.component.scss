@@ -5289,7 +5289,7 @@
 
 
 ::ng-deep ds-root main {
-  margin-top: 117px !important;
+  margin-top: 125px !important;
 }
 
 @media screen and (max-width:768px) {
@@ -7482,5 +7482,14 @@
 ::ng-deep .scrolledY ds-base-expandable-navbar-section {
   .navbar-nav {
     margin-top: 1.3rem;
+  }
+}
+
+
+::ng-deep ds-base-search-form{
+  .btn-outline-secondary{
+    color: #fff;
+    background-color: #495057;
+    border-color: #495057;
   }
 }

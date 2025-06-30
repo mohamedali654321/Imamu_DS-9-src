@@ -7,7 +7,7 @@
     </a>
     <span *ngIf="linkType == linkTypes.None" class="dont-break-out">
     <ds-thumbnail [item]="dso"  [thumbnail]="dso?.thumbnail | async"
-    
+    [defaultImage]="'assets/images/Show.jpg'"
      [limitWidth]="true">
     </ds-thumbnail>
     </span>
@@ -18,7 +18,7 @@
         <span class="badge badge-info" [attr.title]="'item.search.publishDate' | translate" style="background-color: #6aa3d5 !important;color: #FFF; margin-bottom: -2px;" *ngIf="dso.hasMetadata('dc.date.issued') || dso.hasMetadata('dc.date.issuedhijri')" >{{firstMetadataValue('dc.date.issued') ? firstMetadataValue('dc.date.issued') : firstMetadataValue('dc.date.issuedhijri') }}</span>
 
         <!-- <ds-type-badge  *ngIf="showLabel" [object]="dso"></ds-type-badge> -->
-        <span class="badge badge-info" style="background-color: #3992a4  !important;color: #FFF; margin-bottom: -2px;" *ngIf="dso.hasMetadata('dc.type')" >{{firstMetadataValue('dc.type') | kwareTranslate}}</span>
+        <span class="badge badge-info" style="background-color: rgb(178, 161, 121)  !important;color: #FFF; margin-bottom: -2px;" *ngIf="dso.hasMetadata('dc.type')" >{{firstMetadataValue('dc.type') | kwareTranslate}}</span>
         <ds-badges *ngIf="showLabel" [object]="dso" [context]="context" [showAccessStatus]="true"></ds-badges>
         <!-- <ds-access-status-badge [object]="dso" class="pl-1"></ds-access-status-badge> -->
      </div>

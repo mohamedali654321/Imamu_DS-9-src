@@ -4,6 +4,7 @@
     margin-top: calc(var(--ds-content-spacing) * -1);
   
     div.background-image {
+      margin-top: -24px;
       color: white;
       background-color: var(--bs-info);
       position: relative;
@@ -68,7 +69,13 @@
         color: var(--ds-home-news-link-hover-color);
       }
     }
+
+     @media (max-width: 768px) {
+      div.background-image{
+        margin-top: -44px;
+      }
+     }
   }
   
   
-  
+ 

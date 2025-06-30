@@ -28,9 +28,10 @@
         <div class="label_dage">
             <!-- <ds-badges *ngIf="showLabel" [object]="dso" [context]="context"></ds-badges> -->
             <!-- <ds-access-status-badge [object]="dso" class="pl-1"></ds-access-status-badge> -->    
-            <span class="badge badge-info" style="background-color: #3992a4  !important;color: #FFF; margin-bottom: -2px;" *ngIf="dso.hasMetadata('organization.type') || dso.hasMetadata('organization.child.type')" >{{dso.hasMetadata('organization.child.type') ? (firstMetadataValue('organization.child.type') | kwareTranslate):(firstMetadataValue('organization.type') | kwareTranslate)}}</span>
+            <span class="badge badge-info" style="background-color: rgb(178, 161, 121)  !important;color: #FFF; margin-bottom: -2px;" *ngIf="dso.hasMetadata('organization.type') || dso.hasMetadata('organization.child.type')" >{{dso.hasMetadata('organization.child.type') ? (firstMetadataValue('organization.child.type') | kwareTranslate):(firstMetadataValue('organization.type') | kwareTranslate)}}</span>
             <!-- <span class="badge badge-info" style="background-color: rgb(0 89 167)  !important;color: #FFF; margin-bottom: -2px;" *ngIf="dso.hasMetadata('organization.child.type')" >{{firstMetadataValue('organization.child.type') | kwareTranslate}}</span> -->
-  
+                  <ds-badges *ngIf=" (dso.hasMetadata('organization.type') === false && dso.hasMetadata('organization.child.type') === false)&& showLabel" [object]="dso" [context]="context"></ds-badges>
+
                   </div>
         </div>
    

@@ -38,7 +38,8 @@ import { PublictaionCountComponent } from "../../../../../shared/publictaion-cou
     NgStyle,
     NgClass,
     DatePipe,
-    PublictaionCountComponent
+    PublictaionCountComponent,
+    ThemedBadgesComponent
 ],
 })
 /**
