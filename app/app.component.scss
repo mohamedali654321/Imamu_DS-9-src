@@ -3585,15 +3585,15 @@
 // }
 
 @media (min-width: 768px) {
-  ::ng-deep html[dir="rtl"] {
-    ds-home-news {
-      ds-help-search {
-        .help-info .dropdown-menu {
-          transform: translate(12px, 39px) !important;
+    ::ng-deep html[dir="rtl"] {
+        ds-home-news {
+            ds-help-search {
+                .help-info .dropdown-menu {
+                    transform: translate(110px, 39px) !important;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 
@@ -3953,31 +3953,32 @@
 }
 
 ::ng-deep html[dir="rtl"] ds-dynamic-lookup-relation-modal {
-  ds-help-search {
-    .help-info .dropdown-menu {
-      transform: translate(65px, 39px) !important;
-    }
+    ds-help-search {
+        .help-info .dropdown-menu {
+            transform: translate(210px, 39px) !important;
+        }
 
-    .tooltip-arrow {
-      left: 10% !important;
+        .tooltip-arrow {
+            left: 10% !important;
 
+        }
     }
-  }
 }
 
 
 ::ng-deep html[dir="ltr"] ds-dynamic-lookup-relation-modal {
-  ds-help-search {
-    .help-info .dropdown-menu {
-      transform: translate(-210px, 39px) !important;
-    }
+    ds-help-search {
+        .help-info .dropdown-menu {
+            transform: translate(-70px, 39px) !important;
+        }
 
-    .tooltip-arrow {
-      left: 90% !important;
+        .tooltip-arrow {
+            left: 90% !important;
 
+        }
     }
-  }
 }
+
 
 ::ng-deep {
 
@@ -3998,31 +3999,32 @@
 
 ::ng-deep html[dir="rtl"] {
 
-  ds-tabbed-related-entities-search {
-    .help-info .dropdown-menu {
-      transform: translate(85px, 39px) !important;
-    }
+    ds-tabbed-related-entities-search {
+        .help-info .dropdown-menu {
+            transform: translate(180px, 39px) !important;
+        }
 
-    .tooltip-arrow-left {
-      left: 22% !important;
+        .tooltip-arrow-left {
+            left: 22% !important;
+        }
     }
-  }
 }
 
 
 
 ::ng-deep html[dir="ltr"] {
 
-  ds-tabbed-related-entities-search {
-    .help-info .dropdown-menu {
-      transform: translate(-180px, 39px) !important;
-    }
+    ds-tabbed-related-entities-search {
+        .help-info .dropdown-menu {
+            transform: translate(-80px, 39px) !important;
+        }
 
-    .tooltip-arrow-left {
-      left: 78% !important;
+        .tooltip-arrow-left {
+            left: 78% !important;
+        }
     }
-  }
 }
+
 
 
 ::ng-deep html[dir="rtl"] {

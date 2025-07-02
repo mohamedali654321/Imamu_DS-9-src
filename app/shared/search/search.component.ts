@@ -112,6 +112,8 @@ export class SearchComponent implements OnDestroy, OnInit {
    */
   @Input() fixedFilterQuery: string;
 
+  @Input() filterFields: string;
+
   /**
    * A hidden query that will be used but not displayed in the url/searchbar
    */

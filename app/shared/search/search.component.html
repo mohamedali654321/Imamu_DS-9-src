@@ -108,6 +108,7 @@
   <ds-search-form id="search-form"
     [query]="(searchOptions$ | async)?.query"
     [scope]="(searchOptions$ | async)?.scope"
+    [filterFields]="filterFields"
     [hideScopeInUrl]="hideScopeInUrl"
     [currentUrl]="searchLink"
     [showScopeSelector]="showScopeSelector"

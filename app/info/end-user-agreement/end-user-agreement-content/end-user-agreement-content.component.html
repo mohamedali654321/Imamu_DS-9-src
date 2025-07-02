@@ -1,95 +1,330 @@
-<h1>{{ 'info.end-user-agreement.head' | translate }}</h1>
-<p><em>Last updated May 4, 2023</em></p>
+<h2>{{ 'info.end-user-agreement.head' | translate }}</h2>
 
-<h2>Agreement to terms</h2>
-<p>These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you") and {{ 'repository.title' | translate }} ("Company", "we", "us", or "our"), concerning your access to and use of this website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the "Site"). You agree that by accessing the Site, you have read, understood, and agreed to be bound by all of these Terms of Use and any future amendments thereof.</p>
-<p>Supplemental terms and conditions or documents that may be posted on the Site from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Terms of Use at any time and for any reason. We will alert you about any changes by updating the "Last updated" date of these Terms of Use, and you waive any right to receive specific notice of each such change. Please ensure that you check the applicable Terms every time you use our Site so that you understand which Terms apply. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms of Use by your continued use of the Site after the date such revised Terms of Use are posted.</p>
-<p>The information provided on the Site is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Site from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.</p>
 
-<h2>Intellectual property rights</h2>
-<p>Unless otherwise indicated, the Site is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site (collectively, the "Content") and the trademarks, service marks, and logos contained therein (the "Marks") are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of {{ 'info.end-user-agreement.hosting-country' | translate }}, international copyright laws, and international conventions. The Content and the Marks are provided on the Site "AS IS" for your information and personal use only. Except as expressly provided in these Terms of Use, no part of the Site and no Content<sup><a [routerLink]="'.'" fragment="comment-a" id="ref-a">[a]</a></sup> or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
-<p>Provided that you are eligible to use the Site, you are granted a limited license to access and use the Site and to download or print a copy of any portion of the Content to which you have properly gained access solely for your personal, non-commercial use. We reserve all rights not expressly granted to you in and to the Site, the Content and the Marks.</p>
 
-<h2>User representations</h2>
-<p>By using the Site, you represent and warrant that: (1) all registration information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update such registration information as necessary; (3) you have the legal capacity and you agree to comply with these Terms of Use; (4) you will not use the Site for any illegal or unauthorized purpose; and (5) your use of the Site will not violate any applicable law or regulation.</p>
-<p>If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Site (or any portion thereof).</p>
+<div *ngIf="currentLocale ; else elseBlock">
 
-<h2>User registration</h2>
-<p>You may be required to register with the Site. You agree to keep your password confidential and will be responsible for all use of your account and password. We reserve the right to remove, reclaim, or change a username you select if we determine, in our sole discretion, that such username is inappropriate, obscene, or otherwise objectionable.</p>
 
-<h2>Prohibited activities</h2>
-<p>You may not access or use the Site for any purpose other than that for which we make the Site available. The Site may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us.</p>
-<p>As a user of the Site, you agree not to:</p>
-<ul>
-  <li>Systematically retrieve data or other content from the Site to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.</li>
-  <li>Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.</li>
-  <li>Circumvent, disable, or otherwise interfere with security-related features of the Site, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Site and/or the Content contained therein.</li>
-  <li>Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Site.</li>
-  <li>Use any information obtained from the Site in order to harass, abuse, or harm another person.</li>
-  <li>Make improper use of our support services or submit false reports of abuse or misconduct.</li>
-  <li>Use the Site in a manner inconsistent with any applicable laws or regulations.</li>
-  <li>Engage in unauthorized framing of or linking to the Site.</li>
-  <li>Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party's uninterrupted use and enjoyment of the Site or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Site.</li>
-  <li>Delete the copyright or other proprietary rights notice from any Content.</li>
-  <li>Attempt to impersonate another user or person or use the username and password of another user.</li>
-  <li>Upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats ("gifs"), 1x1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as "spyware" or "passive collection mechanisms" or "pcms").</li>
-  <li>Interfere with, disrupt, or create an undue burden on the Site or the networks or services connected to the Site.</li>
-  <li>Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Site to you.</li>
-  <li>Attempt to bypass any measures of the Site designed to prevent or restrict access to the Site, or any portion of the Site.</li>
-  <li>Make any unauthorized use of the Site, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email or other forms of electronic communication, or creating user accounts by automated means or under false pretenses.</li>
-  <li>Use the Site as part of any effort to compete with us or otherwise use the Site and/or the Content for any revenue-generating endeavor or commercial enterprise.</li>
-</ul>
+  <div >
 
-<h2>User generated contributions</h2>
-<p>The Site may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Site, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, "Contributions"). Contributions may be viewable by other users of the Site and through third-party websites. As such, any Contributions you transmit may be treated as non-confidential and non-proprietary. When you create or make available any Contributions, you thereby represent and warrant that:</p>
-<ul>
-  <li>The creation, distribution, transmission, public display, or performance, and the accessing, downloading, or copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark, trade secret, or moral rights of any third party.</li>
-  <li>You are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions to use and to authorize us, the Site, and other users of the Site to use your Contributions in any manner contemplated by the Site and these Terms of Use.</li>
-  <li>You have the written consent, release, and/or permission of each and every identifiable individual person in your Contributions to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Contributions in any manner contemplated by the Site and these Terms of Use.</li>
-  <li>Your Contributions are not false, inaccurate, or misleading.</li>
-  <li>Your Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes, chain letters, spam, mass mailings, or other forms of solicitation.</li>
-  <li>Your Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or otherwise objectionable (as determined by us).</li>
-  <li>Your Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone.</li>
-  <li>Your Contributions are not used to harass or threaten (in the legal sense of those terms) any other person, do not create and are not used to promote violence against a specific person or class of people.</li>
-  <li>Your Contributions do not violate any applicable law, regulation, or rule.</li>
-  <li>Your Contributions do not violate the privacy or publicity rights of any third party.</li>
-  <li>Your Contributions do not violate any applicable law concerning child pornography, or otherwise intended to protect the health or well-being of minors.</li>
-  <li>Your Contributions do not include any offensive comments that are connected to race, national origin, gender, sexual preference, colour, religion, creed or physical handicap.</li>
-  <li>Your Contributions do not otherwise violate, or link to material that violates, any provision of these Terms of Use, or any applicable law or regulation.</li>
-</ul>
-<p>Any use of the Site in violation of the foregoing violates these Terms of Use and may result in, among other things, termination or suspension of your rights to use the Site.</p>
+    <h6>END USER AGREEMENT</h6>
+  
 
-<h2>Site management</h2>
-<p>We reserve the right, but not the obligation, to: (1) monitor the Site for violations of these Terms of Use; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Terms of Use, including without limitation, reporting such user to law enforcement authorities; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof; (4) in our sole discretion and without limitation, notice, or liability, to remove from the Site or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems; and (5) otherwise manage the Site in a manner designed to protect our rights and property and to facilitate the proper functioning of the Site.</p>
+ 
+  <br>
 
-<h2>Privacy policy</h2>
-<p>We care about data privacy and security. Please review our <a class="link-contrast" [routerLink]="['/info/privacy']" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. By using the Site, you agree to be bound by our Privacy Policy, which is incorporated into these Terms of Use.</p>
-<p>Please be advised the Site is hosted in {{ 'info.end-user-agreement.hosting-country' | translate }}. If you access the Site from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in {{ 'info.end-user-agreement.hosting-country' | translate }}, then through your continued use of the Site, you are transferring your data to {{ 'info.end-user-agreement.hosting-country' | translate }}, and you agree to have your data transferred to and processed in {{ 'info.end-user-agreement.hosting-country' | translate }}.</p>
+    <h5>Introduction: </h5>
+   <p>The Institutional Digital Repository of Imam Mohammad Ibn Saud Islamic University is an electronic platform that aims to collect, organize, and distribute academic and research materials produced at the university. It is considered one of the University's key knowledge management tools, providing open access to diverse digital resources.</p>
+   <p>Imam Mohammad Ibn Saud Islamic University's institutional digital repository includes a wide range of academic items, including theses, researches, articles, books, lectures, events, photos, and other items. These items are available to students, researchers, faculty, and the public for research and teaching purposes, contributing to the enhancement of the educational process, research, and knowledge. </p>
+   <p>Imam Mohammad Ibn Saud Islamic University's Institutional Digital Repository organizes digital resources in a systematic and accessible manner, enabling an efficient cataloguing system for searching and browsing. Digital items are stored and preserved securely and reliably, maintaining the quality and integrity of scientific content.</p>
+   <p>The terms and conditions of using the Imam Mohammad Ibn Saud Islamic University Institutional Digital Repository website emanate from the terms and conditions contained in the university's portal policy. </p>
 
-<h2>Term and termination</h2>
-<p>These Terms of Use shall remain in full force and effect while you use the Site. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS OF USE, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SITE (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE TERMS OF USE OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SITE OR DELETE YOUR ACCOUNT AND ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.</p>
-<p>If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.</p>
+  </div>
 
-<h2>Modifications and interruptions</h2>
-<p>We reserve the right to change, modify, or remove the contents of the Site at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Site. We also reserve the right to modify or discontinue all or part of the Site without notice at any time. We will not be liable to you or any third party for any modification, change, suspension, or discontinuance of the Site.</p>
-<p>We cannot guarantee the Site will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Site, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Site at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Site during any downtime or discontinuance of the Site. Nothing in these Terms of Use will be construed to obligate us to maintain and support the Site or to supply any corrections, updates, or releases in connection therewith.</p>
+  <div>
+    <br>
+    <h5>Terms & Conditions</h5>
+   <p>The information on the Imam Mohammad Ibn Saud Islamic University Institutional Digital Repository website is provided by Imam Mohammad Ibn Saud Islamic University and is for educational and research purposes only. While we have made every effort to ensure that the information contained therein is correct and accurate, we do not give an express or implied warranty for this, so your reliance on the information available therein is your full responsibility. Also, your use of the website of the institutional digital repository of Imam Mohammad Ibn Saud Islamic University means your agreement to the terms and conditions that govern it, and if you do not agree to these terms and conditions, you must not use any of its services.</p>
+  </div>
 
-<h2>Corrections</h2>
-<p>There may be information on the Site that contains typographical errors, inaccuracies, or omissions. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Site at any time, without prior notice.</p>
 
-<h2>Disclaimer</h2>
-<p>THE SITE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SITE AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SITE AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SITE'S CONTENT OR THE CONTENT OF ANY WEBSITES LINKED TO THE SITE AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SITE, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SITE, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SITE BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SITE. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SITE, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.</p>
 
-<h2>Limitations of liability</h2>
-<p>IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+  <div>
+    <br>
+    <h5>Restrictions on use</h5>
+    <p>Your use of the Imam Mohammad Ibn Saud Islamic University Institutional Digital Repository website is an implicit acknowledgment of commitment to the following points:</p>
+    <ol>
+      <li>Publication through the site is to serve the academic and scientific purposes of the university only.</li>
+      <li>Not to publish anything that contradicts the philosophy of Imam Mohammad Ibn Saud Islamic University in dialogue and expression of opinion.</li>
+      <li>Not to subject persons, entities, or institutions to appeal, detract, insult or defamation.</li>
+      <li>Not to publish or quote any content (software, materials, data, or other information) that is protected by copyright or for which you do not have a license without approval from the source.</li>
+      <li>Refrain from any praise, promotion, correction, or support for every deviant thought and its symbols.</li>
+      <li>Refrain from publishing, advertising, distributing, circulating, or sharing any content, information or links that violate Sharia, or are intended to harm national security or contain a violation of regulations of any kind, pornographic or obscene materials, or contrary to public morals, or any illegal materials or information.</li>
+      <li>Refrain from publishing all kinds of content and comments that fuel sectarianism, racism, tribalism, and regionalism in all its forms and forms.</li>
+      <li>Commitment to publishing in classical Arabic, and avoid shallowness, weakness, spelling and grammatical errors as much as possible, while making sure that the Qur'anic verses are written correctly with the verse number and the name of the surah.</li>
+      <li>The site administration is not obliged to publish any topic or to adhere to a specific time limit for publication or republication.</li>
+      <li>The views expressed in the published topics represent the views of their authors and do not necessarily express the views of the University.</li>
+      <li>No names or logos present on the Site may be used without prior permission.</li>
+      <li>You may not transfer or copy any of the contents of the site without prior permission.</li>
+      <li>Refrain from participating through the Site and its services in illegal or irregular activities in the Kingdom of Saudi Arabia.</li>
+      <li>Refrain from using any means, software, or procedure to intercept or attempt to interfere with the proper operation of the Site.</li>
+      <li>Refrain from taking any action that imposes a significant load on the infrastructure of the site.</li>
+    </ol>
+  </div>
 
-<h2>Indemnification</h2>
-<p>You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys' fees and expenses, made by any third party due to or arising out of: (1) your Contributions; (2) use of the Site; (3) breach of these Terms of Use; (4) any breach of your representations and warranties set forth in these Terms of Use; (5) your violation of the rights of a third party, including but not limited to intellectual property rights; or (6) any overt harmful act toward any other user of the Site with whom you connected via the Site. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.</p>
 
-<h2>User Data</h2>
-<p>We will maintain certain data that you transmit to the Site for the purpose of managing the performance of the Site, as well as data relating to your use of the Site. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Site. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.</p>
 
-<h2>Miscellaneous</h2>
-<p>These Terms of Use and any policies or operating rules posted by us on the Site or in respect to the Site constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms of Use shall not operate as a waiver of such right or provision. These Terms of Use operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Terms of Use is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Terms of Use and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Terms of Use or use of the Site. You agree that these Terms of Use will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Terms of Use and the lack of signing by the parties hereto to execute these Terms of Use.</p>
+  <div>
+    <br>
+    <h5>Links to and from the website of the institutional digital repository of Imam Mohammad Ibn Saud Islamic University</h5>
 
-<p><a class="link-contrast" [routerLink]="'.'" fragment="ref-a" id="comment-a">[a]</a>&nbsp;The DSpace software used to run this site is open source. Options for reuse and reproduction of the DSpace software is governed by its open source license: <a class="link-contrast" href="https://github.com/DSpace/DSpace/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">https://github.com/DSpace/DSpace/blob/main/LICENSE</a></p>
+    <ol>
+      <li>It is forbidden to place any electronic links to the website of the institutional digital repository of Imam Mohammad Ibn Saud Islamic University within any other site and in any framework in violation of the terms and conditions.</li>
+      <li>The University is not responsible - in any way - for the content, trademarks, logos, or symbols in all their forms, or any other means used or appearing on sites linked to this site or any of its contents.</li>
+      <li>The University reserves all its rights to stop and obstruct any link from any site that contains anything that violates the University's policies, violates a law, or violates intellectual property rights, privacy rights or public rights.</li>
+      <li>The Digital Repository of Imam Mohammad Ibn Saud Islamic University is not responsible for the contents available on any other site accessed through this site, or from this site.</li>
+
+    </ol>
+  </div>
+
+  <div>
+    <br>
+    <h5>Property Rights</h5>
+
+    <ol>
+  <li>The website of the digital repository of  Imam Mohammad Ibn Saud Islamic University is managed by  the General Administration of Library Affairs directly, including all the information and materials contained therein, and all the contents  of the site  are fully protected in accordance with the intellectual property policy document at Imam Mohammad Ibn Saud University approved by the Higher Education Council and Universities Resolution No. 37 - 6 - 1443 This is based on paragraph (11) of Article (20) of the Higher Education and Universities Council Law.</li>
+  <li>All intellectual property rights in the contents of the website of the institutional digital repository of Imam Mohammad Ibn Saud Islamic University are the property of Imam Mohammad Ibn Saud Islamic University except as otherwise stated. </li>
+  <li>It is not permissible to sell, license, rent, modify, copy, reproduce, reprint, upload, advertise, transmit, distribute, publicly display, edit or create derivative works from any materials or contents from the website of the institutional digital repository of Imam Mohammad Ibn Saud Islamic  University to the public or for commercial purposes, without the prior written consent of the University.</li>
+  <li>It is strictly forbidden to modify the contents of the website of the institutional digital repository of Imam Mohammad Ibn Saud Islamic University without obtaining permission, and responsibility for such modification is assumed.</li>
+  <li>It is not permissible to reproduce or exploit the graphics and images published on this site in any way, without the prior written consent of the site administration. </li>
+    </ol>
+  </div>
+
+  <div>
+    <br>
+    <h5>Limitation of Liability</h5>
+    <li>Use the website of the institutional digital repository of Imam Mohammad Ibn Saud Islamic University is at your own risk, and the university and its management do not bear in any way any damage or losses resulting from the use of the site or dealing with it directly or indirectly.  </li>
+    <li>The site administration is keen  to  examine and test its contents at all stages of production, however, the protection of your device and data is your full responsibility and we are not responsible for any loss, interruption or damage to your data, computer or any device used for browsing with you, which may occur while connecting to this site or when using any content from it.</li>
+    <li>The University makes no warranty, express or implied, that there will be no defects in the materials contained on the site or that such materials will be provided without interruption or errors.</li>
+  </div>
+
+  <div>
+    <br>
+    <h5>Termination of Use</h5>
+   <p>Imam Mohammad Ibn Saud Islamic University reserves all rights to prevent or restrict anyone's access to the Imam Mohammad Ibn Saud Islamic University Institutional Digital Repository website without notice and for any reason, including violation of the terms and conditions of use or any other behavior that we may consider, in our sole discretion, contrary to university policies or harmful to others. </p>
+  </div>
+
+  <div>
+    <br>
+    <h5>Privacy Policy</h5>
+   <p>This policy provides clarification of the rights and duties of the institutional digital repository website of Imam Mohammad Ibn Saud Islamic University and its users, and accordingly Imam Mohammad Ibn Saud Islamic University is committed to protecting your personality and ensuring your privacy, and our policy shows our practice in dealing with your personal information with regard to data, whether on the Internet or on computers only, and if you give us any personal information, we will deal with it in accordance with this policy</p>
+  </div>
+
+  <div>
+    <br>
+    <h5>Collection and Use of Electronic Information</h5>
+   <p>The type and amount of information received by Imam Mohammad Ibn Saud Islamic University depends on how the user uses the institutional digital repository of Imam Mohammad Ibn Saud Islamic University, and the user can access most of the pages of the site without disclosing his identity and without revealing any personal information, and Imam Mohammad Ibn Saud Islamic University does not collect through the institutional digital repository site of Imam Mohammad Ibn Saud Islamic University  Any personally identifiable information (name, address, phone number or e-mail address), unless the user decides to provide one of these information - for example - when requesting a service or the like, and if he requests such personal information, we will clarify its purpose when we request it.  </p>
+   <p>The personal data provided by  the user through the website of the institutional digital repository  of Imam Mohammad Ibn Saud Islamic University will remain confidential, and its storage is limited to the period necessary for the purpose for which it was submitted only, and the information provided by the user to third parties will not be provided without the permission of the user.</p>
+  </div>
+
+  <div>
+    <br>
+    <h5>Information Security </h5>
+   <p>We ensure that this site applies the highest security measures to protect the information you provide to it, and that the site encrypts information that is considered sensitive or data that must be kept confidential in accordance with legal requirements.</p>
+  </div>
+
+  <div>
+    <br>
+    <h5>Cookies</h5>
+   <p>The site may store cookies  on your computer when you visit the site, and  these files are used for several technical purposes only, such as identifying you when you visit the site again, and following your current course on the site and moving between its pages, and it is not our goal to use them for any other purposes unless there is a legal and official request to do so.</p>
+   <p>You can at any time reset your browser to refuse all cookies or ask you before accepting any cookie; however, you may lose some features of the site or its services.</p>
+  </div>
+
+  <div>
+    <br>
+    <h5>Other Locations</h5>
+    <p>The website of the institutional digital repository of Imam Mohammad Ibn Saud Islamic University contains many links that can take you to other sites that are not affiliated with the university and are not within the domain (imamu.edu.sa), and these sites do not work in accordance with the privacy policy followed in the website of Imam Mohammad Ibn Saud Islamic University, so we advise the esteemed visitor to review the privacy policy of those sites before revealing any personal information indicating their owner.</p>
+
+  </div>
+
+  <div>
+    <br>
+    <h5>Changes to the Privacy Policy</h5>
+   <p>The University reserves the right to update the privacy policy at any time and without prior notice, and to know the latest update made on it, the user must review the update date at the bottom of this page.</p>
+  </div>
+
+  <div>
+    <br>
+    <h5>Consent to the Privacy Policy</h5>
+    <p>Your use of the institutional digital repository website of Imam Mohammad Ibn Saud Islamic University means your agreement to the privacy policy, and the controls and conditions that govern it, and if you do not agree to this policy, you must not use any of the services provided through this site.</p>
+  </div>
+
+  
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<ng-template #elseBlock>
+
+
+
+
+
+
+
+  <!-- <h6>اتفاقية المستخدم النهائية</h6>
+    <p>آخر تحديث في  يناير01، 2022</p> -->
+    <br>
+
+    <div >
+
+    <div>
+      <br>
+      <h5>مقدمة: </h5>
+<p>المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية هو منصة إلكترونية تهدف إلى جمع وتنظيم ونشر المواد الأكاديمية والبحثية المنتجة في الجامعة. ويعتبر واحدًا من الأدوات الرئيسية لإدارة المعرفة في الجامعة، حيث يوفر وصولًا مفتوحًا إلى الموارد الرقمية المتنوعة.</p>
+<p>يتضمن المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية مجموعة واسعة من المواد الأكاديمية، بما في ذلك الرسائل الجامعية والأبحاث والمقالات والكتب والمحاضرات والفعاليات والصور وغيرها من المواد الأخرى. وتتوفر هذه المواد للطلاب والباحثين وأعضاء هيئة التدريس والجمهور العام لأغراض البحث العلمي والتعليم، مما يسهم في تعزيز العملية التعليمية والبحثية والمعرفة.</p>
+<p>يعمل المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية على تنظيم الموارد الرقمية بطريقة منهجية وسهلة الوصول، حيث يتيح نظام الفهرسة الفعالة للبحث والتصفح. ويتم تخزين وحفظ المواد الرقمية بشكل آمن وموثوق به، مما يحافظ على جودة وتكامل المحتوى العلمي.</p>
+<p>تنبثق شروط وأحكام استخدام موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية من الشروط والأحكام الواردة في سياسة بوابة الجامعة الإلكترونية. </p> 
+    </div>
+
+    <div>
+      <br>
+      <h5>الشروط والأحكام</h5>
+<p>المعلومات الموجودة في موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية مقدمة من قبل جامعة الإمام محمد بن سعود الإسلامية، وهي للأغراض التعليمية والبحثية فقط. وحيث بذلنا قصارى جهدنا للتأكد من صحة المعلومات الموجودة فيه ودقتها، إلا أننا لا نعطي ضمانا صريحا لذلك ولا ضمنيا، لذا فإن اعتمادك على المعلومات المتاحة فيه هو تحت مسؤوليتك الكاملة. كما أن استخدامك لموقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية يعني موافقتك على الضوابط والشروط التي تحكمه، فإذا لم تكن موافقاً على هذه الشروط والضوابط يجب عليك عدم استخدام أي خدمة من خدماته.</p>
+
+    </div>
+
+
+
+    <div>
+      <br>
+      <h5>شروط الاستخدام</h5>
+      <p>موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية متاح للاستخدام الشخصي، ويخضع كل مستخدم لبنود وشروط الاستخدام، ولأنظمة المملكة العربية السعودية، ويعد وصولك ودخولك للموقع واستخدامك للمعلومات المتاحة فيه موافقة على بنود وشروط الاستخدام دون قيد أو شرط.</p>
+      <p>تخضع هذه البنود والشروط لتحديثات وتغييرات مستمرة حسب الحاجة، ويصبح أي تعديل أو تحديث لأي من هذه البنود والشروط نافذًا فور اعتماده ونشره؛ مما يعني ضرورة المراجعة المستمرة لشروط الاستخدام لمعرفة التحديثات التي تتم عليها، إذ إن استمرارك في استخدام موقع المستودع الرقمي المؤسسي يعني اطلاعك وقبولك الضمني لأي تعديل تم على بنود وشروط الاستخدام. علماً بأن الجامعة غير مطالبة بالإعلان عن التحديثات التي تتم على الشروط والبنود. </p>
+    </div>
+
+
+    <div>
+      <br>
+      <h5>قيود الاستخدام</h5>
+
+ 
+      <p>استخدامك لموقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية يعد إقرار ضمني بالالتزام بالنقاط التالية:</p>
+      <ol>
+       <li>النشر من خلال الموقع يكون لخدمة أغراض الجامعة الأكاديمية والعلمية فقط.</li>
+       <li>عدم نشر ما يعارض فلسفة جامعة الإمام محمد بن سعود الإسلامية في الحوار والتعبير عن الرأي.</li>
+       <li>عدم التعرض للأشخاص أو الجهات أو المؤسسات بالطعن أو الانتقاص أو السب أو التشهير.</li>
+       <li>عدم نشر أو اقتباس أي محتوى (برمجيات أو مواد أو بيانات أو معلومات أخرى) محمي بحقوق نشر أو لا تملك ترخيصاً له إلا بعد الموافقة من المصدر.</li>
+       <li>الامتناع عن المدح أو الإشادة أو الترويج أو التصويب أو الدعم لكل فكر منحرف ورموزه.</li>
+       <li>الامتناع عن نشر أو إعلان أو توزيع أو تعميم أو مشاركة أي محتوى أو معلومات أو روابط مخالفة للشرع، أو يقصد بها الإضرار بالأمن الوطني أو تحتوي انتهاكاً للأنظمة من أي نوع، أو مواد إباحية، أو بذيئة، أو مخالفة للآداب العامة، أو أي مواد أو معلومات غير قانونية.</li>
+       <li>الامتناع عن نشر جميع أنواع المحتوى والتعليقات التي تؤجج الطائفية، والعنصرية، والقبلية، والمناطقة بجميع أشكالها وصورها.</li>
+       <li>الالتزام بالنشر باللغة العربية الفصحى، وتجنب الركاكة والضعف والأخطاء الإملائية والنحوية قدر الإمكان مع التأكد من كتابة الآيات القرآنية كتابة صحيحة مع ذكر رقم الآية واسم السورة.</li>
+       <li>إدارة الموقع غير ملزمة بنشر أي موضوع أو التقيد بزمن محدد للنشر أو إعادة النشر.</li>
+       <li>الآراء الواردة في الموضوعات المنشورة، تمثل وجهة نظر أصحابها، ولا تعرب بالضرورة عن وجهة نظر الجامعة.</li>
+       <li>لا يجوز استخدام أي أسماء أو شعارات موجودة في الموقع دون إذن مسبق.</li>
+       <li>لا يجوز نقل أو نسخ أي من محتويات الموقع دون إذن مسبق.</li>
+       <li>الامتناع عن الاشتراك من خلال الموقع وخدماته في أنشطة غير مشروعة أو غير نظامية في المملكة العربية السعودية.</li>
+       <li>الامتناع عن استخدام أي وسيلة أو برنامج أو إجراء لاعتراض أو محاولة اعتراض التشغيل الصحيح للموقع.</li>
+       <li>الامتناع عن القيام بأي إجراء يفرض حملاً كبيراً على البنية التحتية للموقع.</li>
+      </ol>
+    </div>
+    <div>
+      <br>
+      <h5>الروابط من وإلى موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية</h5>
+      <ol>
+        <li> يُمنع وضع أية روابط إلكترونية خاصة بموقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية ضمن أي موقع آخر وفي أي إطار بشكل يخالف الشروط والأحكام.</li>
+        <li>لا تعتبر الجامعة مسؤولة - بأي حال من الأحوال- عن المحتوى أو العلامات التجارية أو الشعارات أو الرموز بكل أشكالها، أو أية وسائل أخرى مستخدمة أو تظهر على المواقع المرتبطة بهذا الموقع أو أي من محتوياته.</li>
+        <li>تحتفظ الجامعة بكامل حقوقها في إيقاف وإعاقة أي ارتباط من أي موقع يحتوي على ما يخالف سياسات الجامعة أو يخالف قانونا أو ينتهك حقوق الملكية الفكرية أو حقوق الخصوصية أو حقوق العلنية.</li>
+        <li>موقع المستودع الرقمي لجامعة الإمام محمد بن سعود الإسلامية غير مسؤول عن المحتويات المتاحة في أي موقع آخر يتم الوصول إليه عبر هذا الموقع، أو الوصول منه لهذا الموقع.</li>
+      </ol>
+
+
+    </div>
+
+    <div>
+      <br>
+      <h5>حقوق الملكية</h5>
+<ol>
+  <li>يدار موقع المستودع الرقمي لجامعة الإمام محمد بن سعود الإسلامية من قبل الإدارة العامة لشؤون المكتبات بشكل مباشر، بما في ذلك جميع المعلومات والمواد الواردة فيه، وتعد جميع محتويات الموقع محمية بالكامل طبقاً لوثيقة سياسة الملكية الفكرية بجامعة الامام محمد بن سعود المعتمدة من قبل مجلس التعلم العالي والجامعات بقرار رقم 37 - 6 - 1443 هـ وذلك استنادا الى الفقرة (11) من المادة (20) من نظام مجلس التعليم العالي والجامعات.</li>
+  <li>جميع حقوق الملكية الفكرية لمحتويات موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية تعد ملكاً لجامعة الإمام محمد بن سعود الإسلامية باستثناء ما يُنص على خلاف ذلك. </li>
+  <li>لا يجوز بيع أو ترخيص أو تأجير أو تعديل أو نسخ أو استنساخ أو إعادة طبع أو تحميل أو الإعلان عن أو نقل أو توزيع أو العرض بصورة علنية أو تحرير أو إنشاء أعمال مشتقة من أي مواد أو محتويات من موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية للجمهور أو لأغراض تجارية، دون الحصول على الموافقة الخطية المسبقة من الجامعة.</li>
+  <li>يُمنع منعاً باتاً أي تعديل لمحتويات موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية دون الحصول على الإذن، ويتم تحمل مسؤولية ذلك التعديل.</li>
+  <li>لا يجوز استنساخ أو استغلال الرسومات والصور المنشورة في هذا الموقع بأية طريقة كانت، دون موافقة خطية مسبقة من إدارة الموقع.</li>
+</ol>
+    </div>
+
+    <div>
+      <br>
+      <h5>حدود المسؤولية</h5>
+
+      <ol>
+
+        <li>استخدام موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية يكون على مسؤوليتك الخاصة، والجامعة وإدارتها لا تتحمل بأي شكل من الأشكال أي ضرر أو خسائر تنتج عن استخدام الموقع أو التعامل معه بشكل مباشر أو غير مباشر.  </li>
+        <li>تحرص إدارة الموقع على فحص واختبار محتوياتها في كل مراحل الإنتاج، ومع ذلك فإن حماية جهازك وبياناتك هي مسؤوليتك بشكل كامل ونحن لا نُعتبر مسؤولين عن أية خسارة أو انقطاع أو تلف لبياناتك أو جهاز الحاسب أو أي جهاز يستخدم للتصفح لديك، والذي قد يحدث أثناء الاتصال بهذا الموقع أو عند استخدام أي محتوى منها.</li>
+        <li>لا تقدم الجامعة أي ضمان صريح أو ضمني، بخصوص عدم وجود عيوب في المواد الواردة في الموقع أو بخصوص تقديم هذه المواد دون انقطاع أو بلا أخطاء.</li>
+      </ol>
+
+    </div>
+
+    <div>
+      <br>
+      <h5>إنهاء الاستخدام</h5>
+      
+    <p>
+      تحتفظ جامعة الإمام محمد بن سعود الإسلامية بكافة الحقوق في منع أو تقييد دخول أي شخص إلى موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية دون إشعار ولأي سبب كان، بما في ذلك مخالفة شروط وبنود الاستخدام أو أي سلوك آخر قد نعتبره - حسب تقديرنا الخاص- مخالفا لسياسات الجامعة أو مضرًا بالآخرين. 
+    </p>
+    </div>
+
+    <div>
+      <br>
+      <h5> سياسة الخصوصية</h5>
+    <p>تقدم هذه السياسة توضيحاً لحقوق وواجبات موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية ومستخدميه، وعليه تلتزم جامعة الإمام محمد بن سعود الإسلامية بحماية شخصيتك وضمان خصوصيتك، وتبين سياستنا هذه ممارستنا في التعامل مع معلوماتك الشخصية فيما يتعلق بالبيانات سواء كانت على الإنترنت أو على أجهزة الكمبيوتر فقط، وفي حال إعطائك لنا أي معلومات شخصية، سوف نتعامل معها طبقاً لهذه السياسة. </p>
+    </div>
+
+    <div>
+      <br>
+
+      <h5>جمع واستخدام المعلومات الإلكترونية</h5>
+      <p>يتوقف نوع المعلومات التي تتلقاها جامعة الإمام محمد بن سعود الإسلامية ومقدارها على كيفية استعمال المستخدم لموقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية ، ويمكن للمستخدم الدخول إلى معظم صفحات الموقع دون الإفصاح عن هويته ودون الكشف عن أية معلومات شخصية، ولا تجمع جامعة الإمام محمد بن سعود الإسلامية عن طريق موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية أية معلومات يمكن التعرف من خلالها على شخصية المستخدم، مثل: (الاسم أو العنوان أو رقم الهاتف أو عنوان البريد الإلكتروني)، إلا إذا قرر المستخدم تقديم إحدى هذه المعلومات - وذلك على سبيل المثال- عند طلب خدمة أو نحوه، وإذا طلب مثل تلك المعلومات الشخصية فإننا سنقوم بتوضيح الغرض منها حينما نطلبها.  </p>
+    <p>ستظل البيانات الشخصية التي يقدمها المستخدم عبر موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية سرية، ويقتصر تخزينها بصورة آمنة على المدة اللازمة للغرض الذي قُّدمت من أجله فقط، ولن يتم تقديم المعلومات التي يقدمها المستخدم إلى الغير إلا بموجب إذن من المستخدم.</p>
+    </div>
+
+    <div>
+      <br>
+      <h5>أمن المعلومات</h5>
+     <p>نحن نضمن بأن هذا الموقع يطبق أعلى إجراءات الأمن لحماية المعلومات التي تقدمها له، كما أن الموقع يعمل على تشفير المعلومات التي تعتبر حساسة أو البيانات التي يتعين الحفاظ على سريتها توافقاً مع المتطلبات القانونية.</p>
+    </div>
+
+    <div>
+      <br>
+      <h5> ملفات تعريف الارتباط (Cookies)</h5>
+    <p>قد يقوم الموقع بتخزين ما يسمى بملفات تعريف الارتباط Cookies على الكمبيوتر الخاص بك عندما تزور الموقع، وتستخدم هذه الملفات لعدة أغراض فنية فقط، كالتعرف عليك عند زيارتك للموقع مرة أخرى، ومتابعة دورتك الحالية في الموقع وتنقلك بين صفحاته، وليس من أهدافنا استخدامها لأي أغراض أخرى ما لم يتوفر طلب قانوي ورسمي بذلك.</p>
+    <p>ويمكنك في أي وقت إعادة إعداد المتصفح الخاص بك لرفض كافة ملفات تعريف الارتباط أو سؤالك قبل قبول أي ملف تعريف ارتباط؛ إلا أنه من الممكن أن تفقد نتيجة ذلك بعض مزايا الموقع أو خدماته.</p>
+    </div>
+
+    <div>
+      <br>
+      <h5>المواقع الأخرى</h5>
+     <p>يحتوي موقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية على العديد من الروابط التي يمكن أن تنقلك إلى مواقع أخرى غير تابعة للجامعة وليست ضمن المجال (imamu.edu.sa)، وهذه المواقع لا تعمل وفقاً لسياسة الخصوصية المتبعة في موقع جامعة الإمام محمد بن سعود الإسلامية لذا ننصح الزائر الكريم بمراجعة سياسة الخصوصية الخاصة بتلك المواقع قبل الكشف عن أي معلومات شخصية تدل على صاحبها.</p>
+     <p>- التغييرات التي قد تطرأ على سياسة الخصوصية.</p>
+     <p>تحتفظ الجامعة بالحق في تحديث سياسة الخصوصية في أي وقت ودون إشعار مسبق، ولمعرفة آخر تحديث أُجري عليها؛ فإنه يجب على المستخدم مراجعة تاريخ التحديث أسفل هذه الصفحة.</p>
+    </div>
+
+
+
+    <div>
+      <br>
+      <h5>الموافقة على سياسة الخصوصية</h5>
+<p>استخدامك لموقع المستودع الرقمي المؤسسي لجامعة الإمام محمد بن سعود الإسلامية يعني موافقتك على سياسة الخصوصية، والضوابط والشروط التي تحكمها، فإذا لم تكن موافقاً على هذه السياسة فإنه يجب عليك عدم استخدام أية خدمة من الخدمات المقدمة من خلال هذا الموقع.</p>
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ng-template>
+
