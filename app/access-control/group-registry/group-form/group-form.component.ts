@@ -259,7 +259,7 @@ export class GroupFormComponent implements OnInit, OnDestroy {
     this.groupDescription = this.formGroup.get('groupDescription');
 
     if (hasValue(this.groupName)) {
-      this.groupName.setAsyncValidators(ValidateGroupExists.createValidator(this.groupDataService));
+      // this.groupName.setAsyncValidators(ValidateGroupExists.createValidator(this.groupDataService));
       this.groupNameValueChangeSubscribe = this.groupName.valueChanges.pipe(debounceTime(300)).subscribe(() => {
         this.changeDetectorRef.detectChanges();
       });
