@@ -3351,7 +3351,7 @@
 
   "menu.section.browse_community_by_title": "حسب العنوان",
 
-  "menu.section.browse_global": "كل دي سبيس",
+  "menu.section.browse_global": "كل المستودع",
 
   "menu.section.browse_global_by_author": "حسب المؤلف",
 
@@ -3585,7 +3585,7 @@
 
   "notification.suggestion.please": "رجاءً",
 
-  "nav.browse.header": "كل دي سبيس",
+  "nav.browse.header": "كل المستودع",
 
   "nav.community-browse.header": "حسب المجتمع",
 
@@ -4730,7 +4730,7 @@
 
   "search.form.search_dspace": "كل المستودع",
 
-  "search.form.scope.all": "كل دي سبيس",
+  "search.form.scope.all": "كل المستودع",
 
   "search.results.head": "نتائج البحث",
 
@@ -8808,7 +8808,7 @@
 
   "dso-selector.set-scope.community.head": "حدد نطاق البحث",
 
-  "dso-selector.set-scope.community.button": "بحث كل دي سبيس",
+  "dso-selector.set-scope.community.button": "بحث كل المستودع",
 
   "dso-selector.set-scope.community.or-divider": "أو",
 
@@ -10296,7 +10296,7 @@
 
   "menu.section.browse_community_by_title": "حسب العنوان",
 
-  "menu.section.browse_global": "كل دي سبيس",
+  "menu.section.browse_global": "كل المستودع",
 
   "menu.section.browse_global_by_author": "حسب المؤلف",
 
@@ -10536,7 +10536,7 @@
 
   "notification.suggestion.please": "رجاءً",
 
-  "nav.browse.header": "كل دي سبيس",
+  "nav.browse.header": "كل المستودع",
 
   "nav.community-browse.header": "حسب المجتمع",
 
@@ -11660,7 +11660,7 @@
 
   "search.form.search_dspace": "كل المستودع",
 
-  "search.form.scope.all": "كل دي سبيس",
+  "search.form.scope.all": "كل المستودع",
 
   "search.results.head": "نتائج البحث",
 
