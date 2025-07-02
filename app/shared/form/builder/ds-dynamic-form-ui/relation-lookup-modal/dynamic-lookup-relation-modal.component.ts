@@ -71,6 +71,7 @@ import { Collection } from "src/app/core/shared/collection.model";
 import { RemoteData } from "src/app/core/data/remote-data";
 import { SubmissionObject } from "src/app/core/submission/models/submission-object.model";
 import { CollectionSearchResult } from "src/app/shared/object-collection/shared/collection-search-result.model";
+import { Location } from "@angular/common";
 
 @Component({
   selector: "ds-dynamic-lookup-relation-modal",
@@ -251,7 +252,7 @@ export class DsDynamicLookupRelationModalComponent
     private collectionDataService: CollectionDataService,
     private submissionService: SubmissionService,
     private route: ActivatedRoute,
-   
+    private location: Location
   ) {}
 
   ngOnInit(): void {
@@ -505,7 +506,10 @@ export class DsDynamicLookupRelationModalComponent
   }
 
   ngOnDestroy() {
-    this.router.navigate([], {});
+    // this.router.navigate([], {});
+    /** kware start edit -- fix search modal focus */
+    this.location.replaceState(window.location.pathname);
+    /** kware end edit */
     Object.values(this.subMap).forEach((subscription) =>
       subscription.unsubscribe()
     );

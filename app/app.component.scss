@@ -7495,3 +7495,12 @@
     border-color: #495057;
   }
 }
+
+
+::ng-deep{
+ds-search-label{
+    a{
+        margin-top: 10px !important;
+    }
+}
+} 
