@@ -178,7 +178,7 @@ export class DsDynamicOneboxComponent extends DsDynamicVocabularyComponent imple
       this.setCurrentValue(this.model.value, true);
     }
 
-    this.vocabulary$ = this.vocabularyService.findVocabularyById(this.model.vocabularyOptions.name).pipe(
+    this.vocabulary$ = this.vocabularyService.findVocabularyById(this.model.vocabularyOptions?.name).pipe(
       getFirstSucceededRemoteDataPayload(),
       distinctUntilChanged(),
     );

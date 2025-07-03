@@ -7498,9 +7498,60 @@
 
 
 ::ng-deep{
+  .btn-danger{
+    color: #FFF !important;
+  }
 ds-search-label{
     a{
         margin-top: 10px !important;
     }
 }
 } 
+
+
+
+::ng-deep html[dir="rtl"]{
+
+  .float-end{
+    float: left !important;
+    right: auto !important;
+  }
+
+
+  ngb-datepicker-navigation-select{
+    .form-select{
+    background-position: right 5.5rem center;
+    }
+  }
+
+
+
+  ds-dso-edit-menu{
+    margin: -1rem auto -1rem -1rem;
+  }
+
+    ds-base-item-page{
+      ds-dso-edit-menu{
+    margin: unset !important;
+  }
+  }
+
+.modal-header .btn-close {
+    margin: -1rem auto -1rem -1rem;
+}
+
+ds-submission-form-section-add{
+  .sections-dropdown-menu{
+    transform: translate(-1345px, 40px) !important;
+  }
+}
+
+
+}
+::ng-deep{
+  ngb-modal-window{
+  .close{
+    margin: -80px 0 0 0 !important ;
+  }
+}
+}
