@@ -17,8 +17,8 @@
     [sortConfig]="sortConfig"
     [loadMoreLink]="'/browse/entityType'"
     [loadMoreParams]="{
-      value: (selectedCategory === 1 || selectedCategory === 10)  ? parentCategories[selectedCategory].value : parentCategories[selectedCategory],
-      view: 'list',
+      value:  parentCategories[selectedCategory].value,
+      view: 'grid',
       source: 'browseCategory'
     }"
   ></ds-category-content>

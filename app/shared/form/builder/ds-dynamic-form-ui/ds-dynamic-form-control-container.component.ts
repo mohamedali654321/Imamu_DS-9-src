@@ -193,10 +193,10 @@ export class DsDynamicFormControlContainerComponent
     /* kware-edit start
 -hide input text in entity fields
 */
-    // return hasValue(this.model.relationship)
-    //   ? null
-    //   : this.dynamicFormControlFn(this.model);
-    return this.dynamicFormControlFn(this.model);
+    return hasValue(this.model.relationship)
+      ? null
+      : this.dynamicFormControlFn(this.model);
+    // return this.dynamicFormControlFn(this.model);
   }
 
   constructor(

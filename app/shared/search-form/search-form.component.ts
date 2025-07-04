@@ -2189,10 +2189,10 @@ export class SearchFormComponent implements OnChanges {
         label: 'query.filter.personName',
         value: 'personName',
       },
-      {
-        label: 'query.filter.subjectName',
-        value: 'subject.title',
-      },
+      // {
+      //   label: 'query.filter.subjectName',
+      //   value: 'subject.title',
+      // },
       {
         label: 'query.filter.projectName',
         value: 'project.name',
@@ -2209,22 +2209,22 @@ export class SearchFormComponent implements OnChanges {
         label: 'query.filter.titleJournal',
         value: 'dc.title',
       },
-      {
-        label: 'query.filter.placeName',
-        value: 'place.legalName',
-      },
-      {
-        label: 'query.filter.eventTitle',
-        value: 'event.title',
-      },
-      {
-        label: 'query.filter.eraName',
-        value: 'era.title',
-      },
-      {
-        label: 'query.filter.seriesTitle',
-        value: 'series.name',
-      },
+      // {
+      //   label: 'query.filter.placeName',
+      //   value: 'place.legalName',
+      // },
+      // {
+      //   label: 'query.filter.eventTitle',
+      //   value: 'event.title',
+      // },
+      // {
+      //   label: 'query.filter.eraName',
+      //   value: 'era.title',
+      // },
+      // {
+      //   label: 'query.filter.seriesTitle',
+      //   value: 'series.name',
+      // },
     ];
   }
 

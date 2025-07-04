@@ -39,7 +39,7 @@ export class BrowseCategoriesComponent implements OnInit, OnDestroy {
   parentCategories = [];
   matchCategories = [];
   // sortedCategories = ['Publication', 'Person', 'Administration', 'OrgUnit', 'Project', 'JournalIssue', 'JournalVolume', 'Journal', 'Site', 'Place', 'Activity', 'Event', 'Era', 'Series'];
-  sortedCategories = ['Publication', 'Person','Administration', 'OrgUnit', 'Project', 'Journal', 'Place', 'Event', 'Era', 'Series', 'Subject'];
+  sortedCategories = ['Publication', 'Person','Administration', 'OrgUnit', 'Project','JournalIssue', 'JournalVolume', 'Journal', 'Place', 'Event', 'Era', 'Series', 'Subject'];
   categoriesConfigs = {
     'Publication': { icon: 'fa-solid fa-book-open' },
     'Person': { icon: 'fa fa-users' },
@@ -86,9 +86,11 @@ export class BrowseCategoriesComponent implements OnInit, OnDestroy {
     this.browseService.getBrowseEntriesFor(
       new BrowseEntrySearchOptions('entityType')
     ).subscribe(entities => {
-      this.parentCategories = entities?.payload?.page.filter(obj=>{
-        return obj.value !== 'JournalIssue' && obj.value !== 'JournalVolume'
-      });
+      // this.parentCategories = entities?.payload?.page.filter(obj=>{
+      //   return obj.value !== 'JournalIssue' && obj.value !== 'JournalVolume'
+      // });
+
+      this.parentCategories = entities?.payload?.page;
       this.parentCategories?.sort((a, b) => this.sortedCategories.indexOf(a.value) - this.sortedCategories.indexOf(b.value));
       this.matchCategories = this.sortedCategories?.filter(x => this.parentCategories?.find(y=>y.value == x));
       this.publicationcategory = this.parentCategories?.find(entity => entity.value === 'Publication');

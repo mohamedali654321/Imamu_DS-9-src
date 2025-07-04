@@ -6370,7 +6370,7 @@
 
 ::ng-deep {
   .nav-item.nav-link:hover {
-    background-color: #eee;
+    background-color: #7e7b7b;
   }
 
   ds-expandable-navbar-section .dropdown-toggle:focus,
@@ -7540,11 +7540,11 @@ ds-search-label{
     margin: -1rem auto -1rem -1rem;
 }
 
-ds-submission-form-section-add{
-  .sections-dropdown-menu{
-    transform: translate(-1345px, 40px) !important;
-  }
-}
+// ds-submission-form-section-add{
+//   .sections-dropdown-menu{
+//     transform: translate(-1345px, 40px) !important;
+//   }
+// }
 
 
 }
